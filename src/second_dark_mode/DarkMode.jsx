@@ -1,8 +1,9 @@
 import { useState } from "react"
+import './darkMode_Style/darkModeStyle.css'
 
 export default function DarkMode () {
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={`page ${darkMode && 'dark-mode'}`}>
